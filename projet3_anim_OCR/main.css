@@ -1,0 +1,144 @@
+* , html {
+    margin:0;
+    padding:0;
+    font-size:100%;
+}
+body{
+   margin: 2% auto;
+   width: 90%;
+   font-size: 300%;
+  border-right:solid lightgray;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+  /* line-height: 2.5rem;*/
+   box-shadow: 1rem 2rem 2rem #f7f7f7;
+    font-family: roboto;
+     line-height: 6rem;
+}
+header{
+    text-align: center;
+    margin: 5rem auto;
+}
+header img{
+    width: 20rem;
+}
+/*style pour section présentation accueil*/
+.presentation{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    background: #f7f7f7;
+    margin: 2rem 0;
+    padding: 2rem auto;
+   
+   /* justify-self: center;
+    align-self: center;
+    vertical-align: center;*/
+}
+.recherche{
+    background: #EDEDED;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.btn{
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+.btn h1{
+    padding: 0.5rem 1.5rem;
+}
+.btn p{
+    opacity: 0.5;
+}
+button{
+    background: #ff79da;
+    width: 70%;
+   /* height: 8em;*/
+    border-radius:5rem;
+    text-align: center;
+    cursor:pointer;
+    font-size: 100%;
+    padding: 0.7rem;
+    margin: 1rem;
+}
+
+/* style pour section fonctionnement*/
+
+.fonction h2{
+    padding: 0.5rem ;
+}
+.fonction ol{
+   /* display:flex;
+    flex-direction:column;*/
+   /* justify-content: space-evenly;*/
+  /*  justify-items: center;*/
+    padding: 1.5rem 0;
+    list-style: none;
+    counter-reset: li;
+  /*  align-content: center;*/
+    margin-left: 5rem;
+    /* width: 130rem;*/
+    position:relative;
+   /* align-content: space-evenly;*/
+}
+.fonction li::before{
+    content:counter(li);
+    display:inline-block;
+    color:white;
+    border-radius: 100% ;
+    background: #9356dc;
+    padding: 0.6rem 2.8rem;
+    margin-left: -4.5rem;
+    font-weight: 900;
+    font-size: 80%;
+    position:absolute;
+    z-index:10;
+}
+.fas{
+    color:#9356dc;
+    padding: 2rem;
+}
+.fonction ol li{
+    counter-increment: li;
+    padding: 2.5rem 0.1rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    background:#f7f7f7;
+    border-radius: 5rem;
+    width: 45rem;
+}
+.fonction ol li a{
+    color:black;
+    font-weight: 600;
+ /*  margin-left: -1.2rem;*/
+   text-align: center;
+    text-decoration:none;
+    padding: 2.5rem;
+    z-index:0;
+}
+.restaurant{
+    background: #f7f7f7;
+    width: 100%;
+    padding: 1.5rem 0 ;
+}
+.restaurant h2{
+    font-size: 150%;
+    font-weight: 900;
+    padding: 1rem 0.5rem;
+}
+.resto{
+    width: 90%;
+    background: white;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction:column;
+    
+}
+.resto img{
+    width: 100%;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+}
